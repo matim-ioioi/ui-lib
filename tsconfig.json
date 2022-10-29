@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM",
+      "DOM.Iterable",
+    ],
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": false,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@root/*": ["./*"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "vue",
+    ],
+    "newLine": "lf",
+    "jsx": "preserve",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": ".dist/types",
+    "removeComments": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+  },
+  "exclude": [
+    "node_modules",
+    ".dist"
+  ]
+}

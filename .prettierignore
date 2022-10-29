@@ -1,0 +1,22 @@
+# Folders
+node_modules/
+public/
+.dist/
+
+storybook-static/
+coverage/
+
+containers/
+charts/
+
+# Files
+Makefile
+tsconfig.json
+.gitlab-ci.yml
+package-lock.json
+.jest-test-results.json
+
+# Extensions
+*.yaml
+*.conf
+*.snap

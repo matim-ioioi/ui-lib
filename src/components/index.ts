@@ -1,0 +1,1 @@
+export { default as SButton } from '@/components/SButton/SButton.vue'
