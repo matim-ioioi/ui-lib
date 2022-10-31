@@ -1,0 +1,49 @@
+.empty-block {
+  $self: &;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: #777;
+
+  &__icon {
+    color: #f00;
+
+    > .svg-icon {
+      width: 104px;
+      height: 104px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--compact {
+    #{$self} {
+      &__icon {
+        > .svg-icon {
+          width: 64px;
+          height: 64px;
+        }
+      }
+
+      &__icon,
+      &__title {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__icon,
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}

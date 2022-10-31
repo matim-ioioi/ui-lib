@@ -1,4 +1,9 @@
 .dist
+dist
 .idea
 
 node_modules
+
+
+# Packed lib
+ui-lib-*.tgz

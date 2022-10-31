@@ -7,40 +7,42 @@
       "ESNext.AsyncIterable",
       "DOM",
       "DOM.Iterable",
+      "scripthost"
     ],
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
+    "isolatedModules": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "noEmit": false,
     "experimentalDecorators": true,
-    "baseUrl": ".",
+    "jsx": "preserve",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "removeComments": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
       "@root/*": ["./*"]
     },
     "typeRoots": [
-      "node_modules/@types"
+      "node_modules/@types",
+      "./types"
     ],
     "types": [
       "node",
-      "vue",
-    ],
-    "newLine": "lf",
-    "jsx": "preserve",
-    "declaration": true,
-    "declarationMap": true,
-    "declarationDir": ".dist/types",
-    "removeComments": true,
-    "importHelpers": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+      "vue"
+    ]
   },
+  "include": ["vite.config.*", "src/**/*", "src/**/*.vue"],
   "exclude": [
     "node_modules",
-    ".dist"
-  ]
+    "dist"
+  ],
 }
